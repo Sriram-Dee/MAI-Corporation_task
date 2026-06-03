@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Phone, Mail, MapPin, Plus, Send, Briefcase } from "lucide-react";
 import gdprImg from "../assets/GDPR.png";
+import logoImg from "../assets/Logo.webp";
 
 const footerLinks = {
   COMPANY: [
@@ -517,7 +518,7 @@ export default function Footer() {
           <div className="lg:col-span-1 space-y-6">
             <a href="#" className="inline-block hover:opacity-90 transition-opacity">
               <img
-                src="/Logo.webp"
+                src={logoImg}
                 alt="MAI – We Build Homes"
                 className="w-24 md:w-28 h-auto brightness-0 invert"
               />

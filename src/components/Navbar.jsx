@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import logoImg from "../assets/Logo.webp";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronDown,
@@ -85,7 +86,7 @@ export default function Navbar() {
               className="flex items-center hover:opacity-90 transition-opacity shrink-0"
             >
               <img
-                src="/Logo.webp"
+                src={logoImg}
                 alt="MAI – We Build Homes"
                 className="w-22 md:w-24 xl:w-28 h-auto brightness-0 invert"
               />
@@ -317,7 +318,7 @@ export default function Navbar() {
               {/* Header */}
               <div className="flex items-center justify-between p-5 bg-white border-b border-gray-100">
                 <img
-                  src="/Logo.webp"
+                  src={logoImg}
                   alt="MAI"
                   className="h-10 opacity-90 invert brightness-0"
                   style={{
