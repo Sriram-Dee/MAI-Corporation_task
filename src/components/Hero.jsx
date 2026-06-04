@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, CheckCircle2 } from "lucide-react";
+import { Search, Check } from "lucide-react";
 
 const services = [
   "Worktop Fitters",
@@ -185,7 +185,9 @@ export default function Hero() {
               key={badge}
               className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm text-white/90 sm:font-semibold"
             >
-              <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-brand-accent shrink-0" />
+              <div className="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-gray-200 flex items-center justify-center shrink-0 shadow-sm">
+                <Check className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-gray-800 stroke-[4]" />
+              </div>
               {badge}
             </div>
           ))}

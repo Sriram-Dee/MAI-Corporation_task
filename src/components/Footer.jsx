@@ -488,10 +488,10 @@ export default function Footer() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-row items-center gap-4 shrink-0 mt-4 lg:mt-0">
+            <div className="flex flex-row flex-wrap items-center gap-4 shrink-0 mt-4 lg:mt-0">
               <a
                 href="#post-project"
-                className="group inline-flex items-center justify-center gap-2 bg-[#0F75BC] hover:bg-[#0F75BC]/90 text-white px-8 py-3.5 rounded-full font-bold text-sm sm:text-base transition-all duration-300 shadow-[0_0_24px_rgba(15,117,188,0.3)] hover:scale-[1.03] active:scale-[0.98]"
+                className="min-w-[200px] group inline-flex items-center justify-center gap-2 bg-[#0F75BC] hover:bg-[#0F75BC]/90 text-white px-8 py-3.5 rounded-full font-bold text-sm sm:text-base transition-all duration-300 shadow-[0_0_24px_rgba(15,117,188,0.3)] hover:scale-[1.03] active:scale-[0.98]"
               >
                 Post a Project
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
@@ -501,7 +501,7 @@ export default function Footer() {
               </a>
               <a
                 href="#learn-more"
-                className="inline-flex items-center justify-center bg-transparent hover:bg-white/5 border border-white/20 text-white px-8 py-3.5 rounded-full font-bold text-sm sm:text-base transition-all duration-300"
+                className="min-w-[200px] inline-flex items-center justify-center bg-transparent hover:bg-white/5 border border-white/20 text-white px-8 py-3.5 rounded-full font-bold text-sm sm:text-base transition-all duration-300"
               >
                 Learn More
               </a>

@@ -145,7 +145,7 @@ export default function Navbar() {
               {/* Sign In Dropdown */}
               {signInDropdownOpen && (
                 <div
-                  className="absolute top-full right-0 mt-2 w-48 rounded-2xl overflow-hidden z-50 py-2"
+                  className="absolute top-full mt-1 right-0 w-48 rounded-2xl overflow-hidden z-50 py-2"
                   style={{
                     background:
                       "linear-gradient(160deg, rgb(10, 22, 40) 0%, rgb(13, 31, 60) 60%, rgb(10, 22, 40) 100%)",
