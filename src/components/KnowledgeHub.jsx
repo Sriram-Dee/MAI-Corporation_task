@@ -61,7 +61,7 @@ const cardVariants = {
     const row = Math.floor(idx / 3);
 
     // Columns: 0 (left), 1 (middle), 2 (right). Rows: 0 (top), 1 (bottom).
-    // Percentage translation offsets match myproject.ai center fanning physics perfectly
+    // Initial offset calculation for centering the cards in the grid
     const xOffset = col === 0 ? "100%" : col === 2 ? "-100%" : "0%";
     const yOffset = row === 0 ? "50%" : "-50%";
 
@@ -73,7 +73,7 @@ const cardVariants = {
     };
   },
   show: ({ idx }) => {
-    // 1-to-1 staggered delays matching myproject.ai entrance order
+    // Staggered delays for a clean staggered entrance animation
     const delays = [0.1, 0.3, 0.5, 0.2, 0.4, 0.6];
     return {
       opacity: 1,
@@ -81,8 +81,8 @@ const cardVariants = {
       x: 0,
       y: 0,
       transition: {
-        type: "tween", // Explicitly disable Framer Motion's default spring mechanics for x/y/scale
-        ease: "easeOut", // Standard CSS ease-out timing curve
+        type: "tween", // Disable spring physics to use smooth custom easing instead
+        ease: "easeOut", // Custom ease-out transition
         duration: 1.2,
         delay: delays[idx],
       },
@@ -97,7 +97,7 @@ function BlogCard({ blog, idx, isMobile, isMobileCarousel, animateState }) {
       variants={cardVariants}
       initial="hidden"
       animate={animateState}
-      // Note: Removed 'transition-all' as it fights with Framer Motion, causing lag. Only transition the hover shadow.
+      // Transition only the shadow to prevent Framer Motion conflicts
       className={`relative w-full rounded-[24px] overflow-hidden cursor-pointer group shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col justify-end text-white ${
         isMobileCarousel ? "h-[360px]" : blog.heightClass
       }`}

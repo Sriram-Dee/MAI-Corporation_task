@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import ctaBgImg from "../assets/cta_bg.webp";
 

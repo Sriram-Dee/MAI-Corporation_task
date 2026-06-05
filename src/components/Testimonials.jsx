@@ -39,7 +39,7 @@ const cardVariants = {
     };
   },
   show: ({ idx }) => {
-    // Stagger delays matching fanning feel
+    // Stagger delays for fanning layout
     const delays = [0.1, 0.3, 0.2, 0.4];
     return {
       opacity: 1,
@@ -47,7 +47,7 @@ const cardVariants = {
       y: 0,
       scale: 1,
       transition: {
-        type: "tween", // Force tween to bypass standard Framer Motion spring mechanics
+        type: "tween", // Custom layout animation transition
         ease: "easeOut",
         duration: 1.0,
         delay: delays[idx]

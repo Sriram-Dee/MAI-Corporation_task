@@ -487,7 +487,7 @@ export default function ToolsSection() {
           </p>
         </motion.div>
 
-        {/* --- Mobile View (Carousel with Dot indicators, `< md`) --- */}
+        {/* Mobile View */}
         <motion.div
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -540,7 +540,7 @@ export default function ToolsSection() {
           </div>
         </motion.div>
 
-        {/* --- Tablet View (Horizontal X-Scroll without shrinking, `md` to `lg`) --- */}
+        {/* Tablet View */}
         <motion.div
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -559,7 +559,7 @@ export default function ToolsSection() {
           </div>
         </motion.div>
 
-        {/* --- Desktop View (3-Column Grid layout, `>= lg`) --- */}
+        {/*Desktop View (3-Column Grid layout) --- */}
         <div className="hidden lg:grid grid-cols-3 gap-8 w-full">
           <motion.div
             initial={{ opacity: 0, y: 40 }}

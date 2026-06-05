@@ -60,7 +60,6 @@ export default function Hero() {
       className="relative w-full overflow-hidden text-white flex flex-col"
       style={{
         minHeight: "100dvh",
-        // paddingTop: "142px" /* 88px row1 + 54px row2 */,
       }}
     >
       {/* ── Background video ── */}

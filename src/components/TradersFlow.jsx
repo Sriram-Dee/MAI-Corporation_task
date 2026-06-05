@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const steps = [
@@ -47,7 +46,7 @@ export default function TradersFlow() {
 
         {/* Process steps flow */}
         <div className="relative">
-          {/* --- Mobile View (Vertical Flow with cards, < md) --- */}
+          {/* Mobile View */}
           <div className="relative block md:hidden">
             {/* Vertical Connector Line */}
             <div className="absolute top-[48px] bottom-[180px] left-1/2 w-[1.5px] bg-[#006837]/35 -translate-x-1/2 -z-0" />
@@ -90,7 +89,7 @@ export default function TradersFlow() {
             </div>
           </div>
 
-          {/* --- Desktop/Tablet View (Horizontal Flow, >= md) --- */}
+          {/* Desktop/Tablet View */}
           <div className="relative hidden md:block">
             {/* Horizontal Connector Line */}
             <div className="absolute top-[56px] left-[12%] right-[12%] h-[1.5px] bg-[#E2E8F0] -z-0" />

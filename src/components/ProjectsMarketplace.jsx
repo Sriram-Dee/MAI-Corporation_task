@@ -127,7 +127,6 @@ const getBudgetColor = (val) => {
 };
 
 export default function ProjectsMarketplace() {
-  const [hovered, setHovered] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [budget, setBudget] = useState(300);
 
@@ -147,7 +146,7 @@ export default function ProjectsMarketplace() {
 
   return (
     <>
-      {/* ── Real UK Projects ── */}
+      {/* Real UK Projects */}
       <section
         id="projects"
         className="py-24 bg-white scroll-mt-16 overflow-hidden"
@@ -261,7 +260,7 @@ export default function ProjectsMarketplace() {
         </div>
       </section>
 
-      {/* ── Stone Offcuts Marketplace ── */}
+      {/* Stone Offcuts Marketplace */}
       <section
         id="offcuts"
         className="py-24 bg-slate-50 relative overflow-hidden scroll-mt-16"

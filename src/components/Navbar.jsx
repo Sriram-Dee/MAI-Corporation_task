@@ -59,7 +59,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
-      setShowSearch(window.scrollY > 300); // Appears after scrolling past part of the Hero section
+      setShowSearch(window.scrollY > 300);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

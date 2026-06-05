@@ -329,7 +329,7 @@ function ElectricGridCanvas() {
           drawElectricArc(ctx, seg.x1, seg.y1, seg.x2, seg.y2, 0.8, whiteGrad, 0.75);
         });
 
-        // Draw the decorative orbit nodes matching the reference design
+        // Draw decorative background grid nodes
         const drawDecorNode = (cx, cy, opacity, drawOrbit) => {
           // Center glowing dot
           ctx.beginPath();
@@ -591,13 +591,13 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@myproject.ai"
+                  href="mailto:info@mai-corporation.com"
                   className="flex items-center gap-3.5 text-[13.5px] text-white/60 hover:text-white transition-colors font-medium"
                 >
                   <div className="w-7 h-7 rounded-full bg-white/5 flex items-center justify-center shrink-0">
                     <Mail className="w-3.5 h-3.5 text-[#0F75BC]" />
                   </div>
-                  info@myproject.ai
+                  info@mai-corporation.com
                 </a>
               </li>
             </ul>

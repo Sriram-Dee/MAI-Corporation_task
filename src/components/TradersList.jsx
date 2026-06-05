@@ -16,7 +16,7 @@ const traders = [
 ];
 
 export default function TradersList() {
-  const [activeIndex, setActiveIndex] = useState(2); // Start centered on MD (index 2) to match screenshot
+  const [activeIndex, setActiveIndex] = useState(2);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 1200
   );
